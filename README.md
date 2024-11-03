@@ -46,8 +46,8 @@ Create a `.env` file in the same directory as your executable or in your project
 
 ```makefile
 DATABASE_HOST=localhost
-DATABASE_USER=root
-DATABASE_PASSWORD=secret
+DATABASE_PORT=PORT
+DEBUG=false
 ```
 
 ### Example Code

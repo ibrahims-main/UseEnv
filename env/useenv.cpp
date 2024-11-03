@@ -4,6 +4,8 @@
 #include <cctype>
 #include <iostream>
 #include <filesystem>
+#include <fstream>
+#include <stdexcept>
 
 // Helper function to trim whitespace from both ends of a string
 static std::string trim(const std::string& str) {

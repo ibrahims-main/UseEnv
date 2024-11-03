@@ -55,13 +55,14 @@ Here’s a simple example of how to use the `UseEnv` library in your project:
 
 ```c++
 #include <iostream>
+#include <stdexcept>
 #include "include/useenv.h"
 
 int main() {
     EnvParser env; // Automatically searches for the .env file
 
     /** 
-     * No need to include string and stdexcept as they are in useenv.h
+     * No need to include string as it is in useenv.h
     */
 
     try {
@@ -74,7 +75,7 @@ int main() {
         std::cout << "Database port: " << db_port << std::endl;
         std::cout << "Debug mode: " << (debug == "true" ? "On" : "Off") << std::endl;
 
-    } catch(const runtime_error& e) {
+    } catch(const std::runtime_error& e) {
         std::cerr << e.what() << '\n';
     }
     

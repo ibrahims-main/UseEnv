@@ -3,14 +3,10 @@
 
 #include <unordered_map>
 #include <string>
-#include <fstream>
-#include <stdexcept>
-#include <iostream>
 
 class EnvParser {
     private:
         std::unordered_map<std::string, std::string> env_vars;
-
         void parseLine(const std::string& line);
         void load(const std::string& filepath);  // Loads a specific file
 

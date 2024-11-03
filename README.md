@@ -60,17 +60,21 @@ Here’s a simple example of how to use the `UseEnv` library in your project:
 int main() {
     EnvParser env; // Automatically searches for the .env file
 
+    /** 
+     * No need to include string and stdexcept as they are in useenv.h
+    */
+
     try {
 
-        std::string db_host = env.get("DATABASE_HOST");
-        std::string db_port = env.get("DATABASE_PORT");
-        std::string debug = env.get("DEBUG");
+        string db_host = env.get("DATABASE_HOST");
+        string db_port = env.get("DATABASE_PORT");
+        string debug = env.get("DEBUG");
 
         std::cout << "Database host: " << db_host << std::endl;
         std::cout << "Database port: " << db_port << std::endl;
         std::cout << "Debug mode: " << (debug == "true" ? "On" : "Off") << std::endl;
 
-    } catch(const std::runtime_error& e) {
+    } catch(const runtime_error& e) {
         std::cerr << e.what() << '\n';
     }
     

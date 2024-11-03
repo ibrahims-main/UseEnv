@@ -51,7 +51,7 @@ DATABASE_PASSWORD=secret
 ```
 
 ### Example Code
-Here’s a simple example of how to use the `EnvParser` library in your project:
+Here’s a simple example of how to use the `UseEnv` library in your project:
 
 ```c++
 #include <iostream>

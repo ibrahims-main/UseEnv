@@ -36,7 +36,7 @@ git clone https://github.com/ibrahims-main/UseEnv.git
 You can compile your code with .env like this
 
 ```bash
-g++ -o my_program main.cpp env/useenv.cpp -std=c++17
+g++ -o my_program main.cpp src/useenv.cpp -std=c++17
 ```
 
 ## Usage 
